@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
-    float restartDelay = 1.5f;
-    float messageDelay = 0.7f;
+    float restartDelay = 0.7f;
+    float messageDelay = 0.4f;
     public TMP_Text scoreText;
     public TMP_Text gameOverText;
     public Score scoreScript;

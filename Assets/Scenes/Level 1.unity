@@ -316,6 +316,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2390844429658725104, guid: 8091ca00e64b25246a53f46144789339, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7889020323830526774, guid: 8091ca00e64b25246a53f46144789339, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.46717
@@ -363,7 +367,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8354404493204325253, guid: 8091ca00e64b25246a53f46144789339, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1500960239}
   m_SourcePrefab: {fileID: 100100000, guid: 8091ca00e64b25246a53f46144789339, type: 3}
 --- !u!1001 &574394402
 PrefabInstance:
@@ -387,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2563323966995591242, guid: a4f6e5cf43d857f478365d76bcbcf79e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 191.94
+      value: 206.86
       objectReference: {fileID: 0}
     - target: {fileID: 2563323966995591242, guid: a4f6e5cf43d857f478365d76bcbcf79e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -514,8 +521,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 46
+  m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -553,7 +560,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -1.1058648, z: 0, w: -3.9336061}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -760,8 +767,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 46
+  m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -799,7 +806,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -1.2438557, z: 0, w: -4.200354}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -1567,7 +1574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d51b65dc2ff5342bb5fb4b93436cc1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10.5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d51b65dc2ff5342bb5fb4b93436cc1, type: 3}
       propertyPath: m_LocalScale.z
@@ -1575,15 +1582,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d51b65dc2ff5342bb5fb4b93436cc1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.000000038721645
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d51b65dc2ff5342bb5fb4b93436cc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.07176733
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d51b65dc2ff5342bb5fb4b93436cc1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 179.24
+      value: 179.5069
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2d51b65dc2ff5342bb5fb4b93436cc1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1892,7 +1899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8141767373596436570, guid: d963a6c947648044991b19c4e206161c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 85
+      value: 88.35
       objectReference: {fileID: 0}
     - target: {fileID: 8141767373596436570, guid: d963a6c947648044991b19c4e206161c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2339,6 +2346,35 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a98ccf49b77d55e46bc1db05d09beea6, type: 3}
+--- !u!1 &1500960238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8354404493204325253, guid: 8091ca00e64b25246a53f46144789339, type: 3}
+  m_PrefabInstance: {fileID: 504053856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500960239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500960238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94505fa1bc9323f48a1d9406449873eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement1
+  rb: {fileID: 1500960241}
+  forwardForce: 3900
+  maxForwardForce: 6000
+  forceIncreaseRate: 50
+  laneSwitchSpeed: 15
+  laneWidth: 3
+  laneCount: 4
+--- !u!54 &1500960241 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7300805148171994888, guid: 8091ca00e64b25246a53f46144789339, type: 3}
+  m_PrefabInstance: {fileID: 504053856}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1538531871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2434,7 +2470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8141767373596436570, guid: d963a6c947648044991b19c4e206161c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 85
+      value: 88.35
       objectReference: {fileID: 0}
     - target: {fileID: 8141767373596436570, guid: d963a6c947648044991b19c4e206161c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2990,7 +3026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8141767373596436570, guid: d963a6c947648044991b19c4e206161c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 85
+      value: 88.35
       objectReference: {fileID: 0}
     - target: {fileID: 8141767373596436570, guid: d963a6c947648044991b19c4e206161c, type: 3}
       propertyPath: m_LocalRotation.w
