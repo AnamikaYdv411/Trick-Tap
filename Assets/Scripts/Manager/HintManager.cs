@@ -23,7 +23,12 @@ public class HintManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(ShowThenFade(displayText));
     }
-
+    public void ShowMisleadingHint(string displayText)
+    {
+        // Only updates the on-screen text — does NOT touch currentHintValue
+        StopAllCoroutines();
+        StartCoroutine(ShowThenFade(displayText));
+    }
     IEnumerator ShowThenFade(string text)
     {
         hintPanelText.text = text;

@@ -11,6 +11,8 @@ public class EnvelopeHint : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         if (isCorrectEnvelope)
             HintManager.Instance.SetHint(hintValue, hintDisplayText);
+        else
+            HintManager.Instance.ShowMisleadingHint(hintDisplayText);
         gameObject.SetActive(false);
     }
 }
