@@ -14,6 +14,8 @@ public class PlayerMovement1 : MonoBehaviour
     private float[] lanePositions;
     private int currentLane;
 
+    public bool controlReversed = false;
+
     void Start()
     {
         lanePositions = new float[laneCount];
@@ -30,11 +32,13 @@ public class PlayerMovement1 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        KeyCode rightKey = controlReversed ? KeyCode.A : KeyCode.D;
+        KeyCode leftKey = controlReversed ? KeyCode.D : KeyCode.A; 
+        if (Input.GetKeyDown(rightKey))
         {
             currentLane = Mathf.Clamp(currentLane + 1, 0, laneCount - 1);
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(leftKey))
         {
             currentLane = Mathf.Clamp(currentLane - 1, 0, laneCount - 1);
         }
