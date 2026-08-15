@@ -62,4 +62,12 @@ public class PlayerMovement1 : MonoBehaviour
             FindAnyObjectByType<GameManager>().EndGame();
         }
     }
+
+    public void ResetControls()
+    {
+        controlReversed = false;
+        if (HintManager.Instance != null)
+            HintManager.Instance.SetHint("", "Controls Normal");
+
+    }
 }

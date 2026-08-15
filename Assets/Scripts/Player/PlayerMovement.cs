@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
+
+    public bool controlReversed = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,20 +18,28 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.AddForce(0, 0, forwardForce * Time.fixedDeltaTime);
+        KeyCode rightKey = controlReversed ? KeyCode.A : KeyCode.D;
+        KeyCode leftKey = controlReversed ? KeyCode.D : KeyCode.A;
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(rightKey))
         {
-            rb.AddForce(sidewaysForce * Time.fixedDeltaTime,0,0, ForceMode.VelocityChange);
-            
+            rb.AddForce(sidewaysForce * Time.fixedDeltaTime, 0, 0, ForceMode.VelocityChange);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(leftKey))
         {
-            rb.AddForce(-sidewaysForce * Time.fixedDeltaTime,0,0,ForceMode.VelocityChange);
+            rb.AddForce(-sidewaysForce * Time.fixedDeltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         if (rb.position.y < -1f)
         {
             FindAnyObjectByType<GameManager>().EndGame();
         }
+    }
+
+    public void ResetControls()
+    {
+        controlReversed = false;
+        if (HintManager.Instance != null)
+            HintManager.Instance.SetHint("", "Controls Normal");
     }
 }

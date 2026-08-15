@@ -8,6 +8,7 @@ public class EnvelopeHint : MonoBehaviour
 
     [Header("Level 3 - Reverse Controls")]
     public bool triggersReverseControls = false;
+    public float reverseDuration = 3f;
 
     void OnTriggerEnter(Collider other)
     {
@@ -20,7 +21,12 @@ public class EnvelopeHint : MonoBehaviour
         if (triggersReverseControls)
         {
             PlayerMovement1 pm = other.GetComponent<PlayerMovement1>();
-            if (pm != null) pm.controlReversed = true;
+            if (pm != null)
+            {
+                pm.controlReversed = true;
+                pm.CancelInvoke(nameof(pm.ResetControls));
+                pm.Invoke(nameof(pm.ResetControls), reverseDuration);
+            }
         }
 
         gameObject.SetActive(false);
