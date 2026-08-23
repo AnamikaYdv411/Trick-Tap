@@ -13,20 +13,25 @@ public class EnvelopeHint : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        if (isCorrectEnvelope)
-            HintManager.Instance.SetHint(hintValue, hintDisplayText);
-        else
-            HintManager.Instance.ShowMisleadingHint(hintDisplayText);
 
-        if (triggersReverseControls)
+        PlayerMovement1 pm = other.GetComponent<PlayerMovement1>();
+
+        if (isCorrectEnvelope)
         {
-            PlayerMovement1 pm = other.GetComponent<PlayerMovement1>();
-            if (pm != null)
+            HintManager.Instance.SetHint(hintValue, hintDisplayText, () =>
             {
-                pm.controlReversed = true;
-                pm.CancelInvoke(nameof(pm.ResetControls));
-                pm.Invoke(nameof(pm.ResetControls), reverseDuration);
-            }
+                // runs only AFTER the freeze/popup ends
+                if (triggersReverseControls && pm != null)
+                {
+                    pm.controlReversed = true;
+                    pm.CancelInvoke(nameof(pm.ResetControls));
+                    pm.Invoke(nameof(pm.ResetControls), reverseDuration);
+                }
+            });
+        }
+        else
+        {
+            HintManager.Instance.ShowMisleadingHint(hintDisplayText);
         }
 
         gameObject.SetActive(false);
