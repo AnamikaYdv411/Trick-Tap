@@ -10,6 +10,10 @@ public class EnvelopeHint : MonoBehaviour
     public bool triggersReverseControls = false;
     public float reverseDuration = 3f;
 
+    [Header("Level 4 - Pattern Gate")]
+    public bool setsPatternSequence;
+    public string[] sequence;
+
     void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
@@ -18,6 +22,9 @@ public class EnvelopeHint : MonoBehaviour
 
         if (isCorrectEnvelope)
         {
+            if (setsPatternSequence)
+                PatternGateManager.Instance.SetSequence(sequence);
+
             HintManager.Instance.SetHint(hintValue, hintDisplayText, () =>
             {
                 // runs only AFTER the freeze/popup ends
