@@ -14,8 +14,12 @@ public class EnvelopeHint : MonoBehaviour
     public bool setsPatternSequence;
     public string[] sequence;
 
+    [Header("Level 5 - Math Gate")]
+    public bool triggersMathGate = false;
+
     void OnTriggerEnter(Collider other)
     {
+        
         if (!other.CompareTag("Player")) return;
 
         PlayerMovement1 pm = other.GetComponent<PlayerMovement1>();
@@ -25,7 +29,17 @@ public class EnvelopeHint : MonoBehaviour
             if (setsPatternSequence)
                 PatternGateManager.Instance.SetSequence(sequence);
 
-            HintManager.Instance.SetHint(hintValue, hintDisplayText, () =>
+            string valueToUse = hintValue;
+            string displayToUse = hintDisplayText;
+
+            if (triggersMathGate)
+            {
+                var problem = MathGateManager.Instance.GenerateProblem();
+                valueToUse = problem.problemText;
+                displayToUse = problem.problemText;
+            }
+
+            HintManager.Instance.SetHint(valueToUse, displayToUse, () =>
             {
                 // runs only AFTER the freeze/popup ends
                 if (triggersReverseControls && pm != null)
