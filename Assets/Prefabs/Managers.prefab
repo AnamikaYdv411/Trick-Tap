@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1987583553264481008}
   - component: {fileID: 4741749087332574921}
   - component: {fileID: 4421504664153164089}
+  - component: {fileID: 7085812617241263087}
+  - component: {fileID: 459841731884298410}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -49,6 +51,10 @@ MonoBehaviour:
   hintPanelGroup: {fileID: 0}
   showDuration: 1.5
   fadeDuration: 0.5
+  hintPopupPanel: {fileID: 0}
+  hintPopupText: {fileID: 0}
+  hintPopupTimerText: {fileID: 0}
+  freezeDuration: 2
   currentHintValue: 
 --- !u!114 &4421504664153164089
 MonoBehaviour:
@@ -62,3 +68,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6840123eb508ac8489da06c94a6df735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestHint
+--- !u!114 &7085812617241263087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4435824890836597535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd461c9f2a263549adf46cd5cfa48aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseManager
+  pauseButton: {fileID: 0}
+  pausePanel: {fileID: 0}
+--- !u!114 &459841731884298410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4435824890836597535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e262ba8fbe1bd4baeaa063bc242fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinManager

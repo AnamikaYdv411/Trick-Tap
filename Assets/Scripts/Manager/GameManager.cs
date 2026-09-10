@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text gameOverText;
     public Score scoreScript;
-    public GameObject completeLevelUI;
+    public LevelComplete levelComplete;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -20,7 +20,13 @@ public class GameManager : MonoBehaviour
 
     public void CompleteLevel()
     {
-        completeLevelUI.SetActive(true);
+        if (gameHasEnded)
+            return;
+
+        gameHasEnded = true;
+
+        // Tell LevelComplete to display score + coins
+        levelComplete.ShowLevelComplete();
     }
     public void EndGame()
     {
