@@ -53,7 +53,7 @@ MonoBehaviour:
   hintPopupPanel: {fileID: 0}
   hintPopupText: {fileID: 0}
   hintPopupTimerText: {fileID: 0}
-  freezeDuration: 2
+  freezeDuration: 3
   currentHintValue: 
 --- !u!114 &4421504664153164089
 MonoBehaviour:
