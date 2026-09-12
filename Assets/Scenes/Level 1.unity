@@ -6172,7 +6172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
   player: {fileID: 1492410265}
-  offset: {x: 0, y: 1, z: -5}
+  offset: {x: 0, y: 2, z: -5}
 --- !u!4 &1601493835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1914284520993159570, guid: a98ccf49b77d55e46bc1db05d09beea6, type: 3}
