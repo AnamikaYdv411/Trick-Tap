@@ -5052,6 +5052,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 466432909014018254, guid: ceb6ce95c88e3744f9494bb9d22f78f5, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083908461661769082, guid: ceb6ce95c88e3744f9494bb9d22f78f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5100,6 +5104,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1942221707}
+    - target: {fileID: 5096866651507474436, guid: ceb6ce95c88e3744f9494bb9d22f78f5, type: 3}
+      propertyPath: offset.y
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5274,6 +5282,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1247318347666938778, guid: cd51b9f89a2bc3f4bb68227d6e4fece5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1687041343445399566, guid: cd51b9f89a2bc3f4bb68227d6e4fece5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
