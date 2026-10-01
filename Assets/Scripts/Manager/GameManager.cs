@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
-    float restartDelay = 0.7f;
-    float messageDelay = 0.4f;
+    float restartDelay = 2f;
+    float messageDelay = 1f;
     public TMP_Text scoreText;
     public TMP_Text gameOverText;
     public Score scoreScript;
@@ -30,11 +30,29 @@ public class GameManager : MonoBehaviour
     }
     public void EndGame()
     {
-        if (gameHasEnded == false){
-
+        if (gameHasEnded == false)
+        {
             gameHasEnded = true;
             scoreScript.stopScore = true;
             Debug.Log("GAME OVER!");
+
+            // Play the die animation
+            PlayerAnimation anim = FindAnyObjectByType<PlayerAnimation>();
+            if (anim != null) anim.PlayDeath();
+
+            // Stop the player's movement and physics
+            PlayerMovement movement = FindAnyObjectByType<PlayerMovement>();
+            if (movement != null)
+            {
+                movement.enabled = false;
+                Rigidbody rb = movement.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.linearVelocity = Vector3.zero;  // use rb.velocity on older Unity versions
+                    rb.isKinematic = true;
+                }
+            }
+
             Invoke("ShowGameOver", messageDelay);
             Invoke("Restart", restartDelay);
         }
