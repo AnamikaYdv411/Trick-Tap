@@ -240,8 +240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &85865495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -464,8 +462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &398702519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -652,8 +648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &408807178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -735,6 +729,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1001 &458521143
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1315914633422070407, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 391.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 160.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721909329137148077, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 990af1c9615b98448a0d52ff4d643ac2, type: 3}
 --- !u!1001 &504053856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -892,8 +943,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &514230337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1052,8 +1101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &542951180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1258,8 +1305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &568412179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2049,8 +2094,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &691517087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2599,8 +2642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &861258546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2782,8 +2823,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &870992507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3066,8 +3105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &937518463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3407,8 +3444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1024329601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3595,8 +3630,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1039071721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4001,8 +4034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1054477914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4353,8 +4384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1216480659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4614,8 +4643,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1335174667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4797,8 +4824,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1337610822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4957,8 +4982,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1369085315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5171,6 +5194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8830044843693633855, guid: cd51b9f89a2bc3f4bb68227d6e4fece5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 70802512}
     - target: {fileID: 9092909153056425152, guid: cd51b9f89a2bc3f4bb68227d6e4fece5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5381,8 +5408,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1524915591
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5717,8 +5742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1586945314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6199,8 +6222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1658282701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6382,8 +6403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1675464639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6633,8 +6652,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1795855732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6949,8 +6966,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1880029998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7465,8 +7480,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &1932070439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7719,8 +7732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &2030416825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8071,8 +8082,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   value: 1
-  collectVFX: {fileID: 0}
-  collectSFX: {fileID: 0}
 --- !u!65 &2131133102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8404,5 +8413,6 @@ SceneRoots:
   - {fileID: 1047980943}
   - {fileID: 574394402}
   - {fileID: 667260423}
+  - {fileID: 458521143}
   - {fileID: 1916927911}
   - {fileID: 2875019384104147624}

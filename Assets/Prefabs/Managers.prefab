@@ -81,3 +81,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
   pauseButton: {fileID: 0}
   pausePanel: {fileID: 0}
+  levelSelectSceneName: LevelSelection

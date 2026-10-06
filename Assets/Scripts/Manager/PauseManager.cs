@@ -35,8 +35,8 @@ public class PauseManager : MonoBehaviour
     public GameObject pauseButton;   // the button visible during gameplay
     public GameObject pausePanel;    // your Figma pause page
 
-    //[Header("Scene Names")]
-    //public string levelSelectSceneName = "LevelSelect";
+    [Header("Scene Names")]
+    public string levelSelectSceneName = "LevelSelection";
 
     bool isPaused = false;
 
@@ -83,9 +83,9 @@ public class PauseManager : MonoBehaviour
         SceneManager.LoadScene("Menu"); // use your actual main menu scene name
     }
 
-    //public void GoToLevelSelect()
-    //{
-    //    Time.timeScale = 1f;
-    //    SceneManager.LoadScene(levelSelectSceneName);
-    //}
+    public void GoToLevelSelect()
+    {
+       Time.timeScale = 1f;
+       SceneManager.LoadScene(levelSelectSceneName);
+    }
 }

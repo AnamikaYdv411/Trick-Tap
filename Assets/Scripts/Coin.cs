@@ -4,8 +4,6 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public int value = 1;
-    public GameObject collectVFX;   // optional particle burst
-    public AudioClip collectSFX;
 
     void OnTriggerEnter(Collider other)
     {
@@ -13,9 +11,8 @@ public class Coin : MonoBehaviour
 
         CoinManager.Instance.AddCoins(value);
 
-        if (collectVFX) Instantiate(collectVFX, transform.position, Quaternion.identity);
-        if (collectSFX) AudioSource.PlayClipAtPoint(collectSFX, transform.position);
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayCoin();
 
-        gameObject.SetActive(false); // or Destroy(gameObject)
+        gameObject.SetActive(false);
     }
 }

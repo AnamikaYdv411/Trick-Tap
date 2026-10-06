@@ -22,4 +22,9 @@ public class Menu : MonoBehaviour
         Application.Quit();
 
     }
+    public void GoToMenu()
+{
+    Time.timeScale = 1f;               // safety, in case the game was paused
+    SceneManager.LoadScene("Menu");    // must match your scene name exactly
+}
 }
