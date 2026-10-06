@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
             if (anim != null) anim.PlayDeath();
 
             // Stop the player's movement and physics
-            PlayerMovement movement = FindAnyObjectByType<PlayerMovement>();
+            PlayerMovement1 movement = FindAnyObjectByType<PlayerMovement1>();
             if (movement != null)
             {
                 movement.enabled = false;
@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
